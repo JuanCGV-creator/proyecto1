@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingreso al Sistema - Distribución de Mercancía</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body class="login-body">
+
+    <div class="login-container">
+
+        <!-- Logo institucional -->
+        <div class="login-logo">
+            <img src="/images/icono.avif" alt="Logo" />
+            <h2>Sistema de Distribución y Entregas</h2>
+        </div>
+
+        <!-- Formulario -->
+        <form id="loginForm" class="login-card">
+
+            <h3>Iniciar Sesión</h3>
+
+            <label>Usuario o correo electrónico</label>
+            <input type="email" id="email" placeholder="correo@empresa.com" required>
+
+            <label>Contraseña</label>
+            <div class="password-box">
+                <input type="password" id="password" placeholder="********" required>
+                <span id="togglePassword" class="ver-pass">👁</span>
+            </div>
+
+            <!-- Indicador de carga -->
+            <div id="loading" class="loading" style="display: none;">
+                Cargando...
+            </div>
+
+            <button type="submit" class="btn-primary">Ingresar</button>
+
+            <a href="#" class="forgot-link">¿Olvidó su contraseña?</a>
+
+            <div class="register-box">
+                ¿No tienes cuenta?
+                <a href="/register" class="register-link">Regístrate aquí</a>
+            </div>
+        </form>
+
+        <footer>
+            <p>Desarrollado por Juan Garzón – SENA 2025</p>
+        </footer>
+
+    </div>
+
+    <script src="/js/utils.js"></script>
+    <script src="/js/login.js"></script>
+</body>
+
+</html>

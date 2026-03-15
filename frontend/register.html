@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuario - Sistema de Distribución</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body class="login-body">
+
+    <div class="login-container">
+
+        <!-- Logo institucional -->
+        <div class="login-logo">
+            <img src="/images/JuanCGarzon.png" alt="Logo" />
+            <h2>Crear Cuenta</h2>
+        </div>
+
+        <!-- Formulario -->
+        <form id="registerForm" class="login-card">
+
+            <h3>Registro de Usuario</h3>
+
+            <label>Nombres</label>
+            <input type="text" id="nombre" placeholder="Ej: Juan David" required>
+
+            <label>Apellidos</label>
+            <input type="text" id="apellido" placeholder="Ej: Garzón Pérez" required>
+
+            <label>Cédula</label>
+            <input type="text" id="cedula" placeholder="Ej: 1025487963" required>
+
+            <label>Fecha de nacimiento</label>
+            <input type="date" id="nacimiento" required>
+
+            <label>Correo electrónico</label>
+            <input type="email" id="email" placeholder="correo@empresa.com" required>
+
+            <label>Contraseña</label>
+            <input type="password" id="password" placeholder="********" required>
+
+            <button type="submit" class="btn-primary">Registrar</button>
+
+            <div class="register-box">
+                ¿Ya tienes cuenta?
+                <a href="/login" class="register-link">Inicia sesión</a>
+            </div>
+
+        </form>
+
+        <footer>
+            <p>Desarrollado por Juan Garzón – SENA 2025</p>
+        </footer>
+
+    </div>
+
+    <script src="/js/utils.js"></script>
+    <script src="/js/register.js"></script>
+</body>
+
+</html>

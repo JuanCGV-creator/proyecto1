@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel Administrativo - Sistema de Distribución</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="panel-body">
+    <button class="menu-toggle" onclick="toggleSidebar()">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <img src="/images/JuanCGarzon.png" class="user-avatar">
+            <h3>Bienvenido</h3>
+            <p id="userName">Administrador</p>
+        </div>
+
+        <ul class="menu">
+            <li onclick="loadView('dashboard')" class="active"><i class="fas fa-home"></i> Inicio</li>
+            <li onclick="loadView('clientes')"><i class="fas fa-users"></i> Clientes</li>
+            <li onclick="loadView('productos')"><i class="fas fa-box-open"></i> Productos</li>
+            <li onclick="loadView('productosxml')"><i class="fas fa-file-code"></i> Productos XML</li>
+            <li onclick="loadView('ventas')"><i class="fas fa-shopping-cart"></i> Ventas</li>
+            <li onclick="loadView('facturacion')"><i class="fas fa-file-invoice-dollar"></i> Facturación</li>
+            <li onclick="loadView('distribucion')"><i class="fas fa-truck"></i> Distribución</li>
+            <li onclick="loadView('notificaciones')"><i class="fas fa-bell"></i> Notificaciones</li>
+            <li onclick="cerrarSesion()" class="logout-item"><i class="fas fa-sign-out-alt"></i> Cerrar Sesión</li>
+        </ul>
+
+        <footer class="sidebar-footer">
+            Desarrollado por Juan Garzón<br>SENA 2025
+        </footer>
+    </div>
+
+    <div class="panel-container">
+        <h2 id="tituloModulo" class="content-title">Panel administrativo</h2>
+        <div id="panelContent">
+            <p>Bienvenido al sistema de distribución.
+                Selecciona una opción del menú para comenzar.</p>
+        </div>
+    </div>
+
+    <script src="/js/utils.js"></script>
+    <script src="/js/panel.js"></script>
+</body>
+
+</html>
